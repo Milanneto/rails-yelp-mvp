@@ -1,0 +1,7 @@
+<ol><% @restaurants.each do |restaurant| %>
+<ul><%= restaurant.name %></ul>
+<ul><%= restaurant.address %></ul>
+<ul><%= restaurant.phone_number %></ul>
+<ul><%= restaurant.category %></ul>
+<%= link_to "See details", restaurant_path(restaurant), class: "btn btn-primary"%>
+<% end %></ol>
